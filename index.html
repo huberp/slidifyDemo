@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Daten-Analyse mit R</title>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Daten-Analyse mit R">
+  <meta name="author" content="Peter Huber">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -32,9 +32,9 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1></h1>
+    <h1>Daten-Analyse mit R</h1>
     <h2></h2>
-    <p><br/></p>
+    <p>Peter Huber<br/></p>
   </hgroup>
     <a href="https://github.com/huberp/slidifyDemo/zipball/gh-pages" class="example">
      Download
@@ -46,13 +46,15 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Slide 1</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+    <p>Animierte Liste</p>
+
+<ol class = "build incremental">
+<li>Punkt 1: Datenanalyse allgemein</li>
+<li>Punkt 2: Die Sprache R</li>
+<li>Punkt 3: Toolset</li>
 </ol>
 
   </article>
@@ -64,16 +66,24 @@
     <h2>Slide 2</h2>
   </hgroup>
   <article data-timings="">
-    <!-- MotionChart generated in R 3.1.1 by googleVis 0.5.6 package -->
+    <p>Google Visualisierung...dieses Beispiel über github</p>
 
-<!-- Thu Oct 23 22:36:47 2014 -->
+<pre><code class="r">require(googleVis)
+data(Fruits)
+M1 &lt;- gvisMotionChart(Fruits, idvar = &#39;Fruit&#39;, timevar = &#39;Year&#39;)
+print(M1, tag = &#39;chart&#39;)
+</code></pre>
+
+<!-- MotionChart generated in R 3.1.1 by googleVis 0.5.6 package -->
+
+<!-- Fri Oct 24 09:15:39 2014 -->
 
 <!-- jsHeader -->
 
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID1bcc253a40c2 () {
+function gvisDataMotionChartIDf2c6b02371 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -171,15 +181,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID1bcc253a40c2() {
-var data = gvisDataMotionChartID1bcc253a40c2();
+function drawChartMotionChartIDf2c6b02371() {
+var data = gvisDataMotionChartIDf2c6b02371();
 var options = {};
 options["width"] =    600;
 options["height"] =    500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID1bcc253a40c2')
+    document.getElementById('MotionChartIDf2c6b02371')
     );
     chart.draw(data,options);
     
@@ -203,9 +213,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID1bcc253a40c2);
+callbacks.push(drawChartMotionChartIDf2c6b02371);
 })();
-function displayChartMotionChartID1bcc253a40c2() {
+function displayChartMotionChartIDf2c6b02371() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -231,12 +241,12 @@ callbacks.shift()();
 
 <!-- jsChart -->  
 
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID1bcc253a40c2"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartIDf2c6b02371"></script>
  
 
 <!-- divChart -->
 
-<div id="MotionChartID1bcc253a40c2" 
+<div id="MotionChartIDf2c6b02371" 
   style="width: 600; height: 500;">
 </div>
 
@@ -250,7 +260,7 @@ callbacks.shift()();
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Slide 1'>
          1
       </a>
     </li>
